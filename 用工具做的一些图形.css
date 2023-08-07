@@ -1,0 +1,75 @@
+body {
+    background-color: #E6E6E6;
+    margin: 1rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+h1{
+    /* h1是行内元素 */
+    text-align: center;
+    /* 参考：https://juejin.cn/post/6994718555925119012 */
+}
+
+.picture {
+    display: flex;
+    /* 子元素间距相等 */
+    justify-content: space-around;
+}
+
+.left {
+
+    background: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+
+.middle .top {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid red;
+}
+
+.middle .bottom {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid green;
+}
+
+.middle .middle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid yellow;
+    border-bottom: 50px solid transparent;
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+.middle .middle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid purple;
+    border-bottom: 50px solid transparent;
+    margin-top: -100px;
+}
+
+.right {
+    font-size: 10em;
+    display: inline-block;
+    width: 0.4em;
+    box-sizing: content-box;
+    height: 0.4em;
+    border: 0.1em solid red;
+    position: relative;
+    border-radius: 0.35em;
+}
+/* 各种形状参考：https://css-tricks.com/the-shapes-of-css/ */
